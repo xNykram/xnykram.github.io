@@ -1,0 +1,533 @@
+//Imports
+@import url('https://fonts.googleapis.com/css?family=Teko:300,500&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Montserrat+Alternates&display=swap')
+
+// Global
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+a
+    color: inherit
+    text-decoration: none
+
+body, html
+    overflow-y: visible
+    overflow-x: hidden
+
+#mainSection
+    height: 980px
+    background-image: url('https://initiate.alphacoders.com/images/100/cropped-2560-1440-1007350.jpg?5237')
+    background-repeat: no-repeat
+    background-size: cover
+
+
+.background
+    width: 100%
+    height: 980px
+
+
+.overlay
+    width: 100%
+    height: 980px
+    
+
+.section-title
+    text-align: center
+    width: 100%
+    height: 90px
+    font-family: 'Teko'
+    font-size: 3.5rem
+    color: black
+    text-transform: uppercase
+    letter-spacing: 0.4rem
+
+.section-subtitle
+    font-family: 'Montserrat'
+    letter-spacing: 0.1rem
+    font-size: 1rem
+
+    
+
+.flex-menu
+    display: flex
+    position: fixed
+    z-index: 5
+    width: 100%
+    box-shadow: none
+    height: 50px
+    justify-content: space-around
+    transition: all 1s ease-in-out
+
+    .logo
+        font-size: 1.6rem
+        display: flex
+        padding: 5px
+        flex-direction: row
+        color: white
+        line-height: normal
+        font-family: 'Montserrat'
+
+        img
+            width: 30px
+            margin-right: 5px
+            transition: all 1s ease-in-out
+    .logo:hover
+        cursor: pointer
+    ul
+        list-style: none
+        text-align: center
+        display: flex
+        height: 100%
+        li
+            font-family: Montserrat
+            font-weight: lighter
+            text-transform: uppercase
+            transition: all .1s ease-in-out
+            margin:
+                top: 15px
+                left: 15px
+                right: 15px
+            color: #ffffffc9
+            font-size: 1rem
+
+        .underline
+            border-bottom: 3px solid white
+            color: #ffffff
+            cursor: pointer
+
+.flex-menu.active
+        background-color: white
+        box-shadow: 1px 1px 10px gray
+
+        li
+            color: black
+
+        .underline
+            border-bottom: 3px solid black
+            color: black
+
+.flex-section
+    display: flex
+    flex-direction: row
+
+.section
+    height: 940px
+
+.flex-containter
+    font-family: Montserrat, sans-serif
+    display: flex
+    width: auto
+    flex-direction: column
+    height: 90%
+    justify-content: center
+    align-items: center
+    .box-1
+        font-weight: bold
+        letter-spacing: 1rem
+        color: white   
+        font-size: 4.0rem
+        height: auto
+        text-transform: uppercase
+        padding: 5px
+
+    .box-2
+        color: #e4dcdcee
+        text-transform: uppercase
+        font-weight: lighter
+        letter-spacing: 0.2rem
+        font-size: 1.2rem
+        margin: 5px
+            
+nav > ul > li > a
+    text-decoration: none
+
+#aboutmeSection
+    background-color: rgb(255,255,255)
+    height: 600px
+
+    .flex-section
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        .about-me-section
+            display: flex
+            justify-content: center
+
+            .info-section
+                width: 50%
+                display: flex
+                // justify-content: center
+                flex-direction: column
+                font-family: 'Montserrat'
+
+                .info-section-box
+                    padding: 35px
+                    background-color: snow
+
+                    .info-section-title
+                        width: 100%
+                        padding:
+                            bottom: 8px
+                        font-size: 1.1rem
+                        letter-spacing: 2px
+
+
+                    .info-section-about-me
+                        width: 100%
+                        font-size: 0.82em
+                        line-height: 20px
+
+                    .info-section-rands
+                        display: flex
+                        flex-direction: row
+                        justify-content: left
+                        height: 70px
+                        align-items: center
+                        
+                        .info-resume
+                            color: black
+                            padding: 10px
+
+                        .info-resume:hover
+                            cursor: pointer
+
+                        .info-social-section           
+                            color: black
+                            width: 90%
+                            display: flex
+                            flex-direction: row
+                            justify-content: flex-end
+
+                .fab
+                    font-size: 30px
+                    color: rgba(255,64,64, 0.8)
+                    margin: 5px
+                    
+            .photo-section
+                width: 30%
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: row
+
+                .photo-frame
+                    width: 350px
+                    background-image: url('../images/profile-picture.jpg')
+                    height: 350px
+                    border: 5px solid white
+                    background-size: cover
+                    box-shadow: 1px 1px 7px gray
+
+#skillSection
+    background-color: white
+    height: 650px
+    display: flex  
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    .skills-flex
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+
+        .skills-box
+            width: 80vh
+            padding: 15px
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            display: flex
+
+            .skills-frame
+                width: 100%
+                color: white
+                display: flex
+                flex-direction: row
+                font-family: 'Montserrat'
+                justify-content: space-around
+                align-items: left
+                margin:
+                    top: 20px
+                    bottom: 2%
+
+            .other
+                width: 40vh
+
+            .tools
+                width: 60vh
+
+            .skill-item
+                background-color: rgba(255, 64, 64, 0.7)
+                padding: 10px
+                opacity: 0
+                height: 37px
+                transition: transform 0.2s ease-in-out
+
+            .skill-item.active
+                transform: scale(1.1,1.1)
+                cursor: default
+
+#projectsSection
+    background-color: white
+    align-items: center
+    justify-content: center
+    display: flex
+    height: 930px
+    margin:
+        bottom: 50px
+    flex-direction: column
+
+    .project-flexbox
+        display: flex
+        width: 60%
+        justify-content: center
+        align-content: center
+        flex-wrap: wrap
+        flex-direction: row
+
+        .project-box
+            height: 300px
+            width: 300px
+            margin: 10px
+            opacity: 0
+            position: relative
+
+        .overlay
+            position: fixed 
+            display: none 
+            width: 100% 
+            height: 100% 
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background-color: rgba(0,0,0,0.5)
+            z-index: 2
+            cursor: pointer
+        .project-box img
+            width: 100%
+            height: 100%
+
+        .project-box:hover
+            cursor: pointer
+
+#contactSection
+    height: 450px
+    background-color: #07192F
+
+    .contact-flex
+        height: 80%
+        display: flex
+        justify-content: space-around
+        align-content: center
+        align-items: center
+        flex-direction: column
+        color: white
+
+        .section-title
+            color: white!important
+
+        .contact-section-box
+            display: flex
+            flex-direction: row
+            font-family: 'Montserrat'
+            justify-content: space-between
+            width: 70%
+            height: auto
+
+            .button
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 5px
+                width: 50%
+
+                div
+                    background-color: #ff4040
+                    padding: 12px
+
+                div:hover
+                    cursor: pointer
+
+            .contact-info
+                font-size: 0.9rem
+                height: 15%
+                width: 50%
+                align-items: flex-start
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+
+                div i
+                    padding: 10px
+// media query
+
+$phone: "(max-width: 650px)"
+$sPhone: "(min-width: 651px) and (max-width: 900px)"
+$tablet: "(min-width: 651px) and (max-width: 1279px)"
+$desktop: "(min-width: 1280px)"
+
+
+@media #{$tablet}
+    #aboutmeSection
+        height: 1100px
+        .flex-section
+            .about-me-section
+                height: 900px
+                flex-wrap: wrap
+                justify-content: space-around
+                .info-section
+                    width: 80%
+                    height: 50%
+                    .info-section-box
+                        .info-section-rands
+                            flex-wrap: wrap
+                            justify-content: center
+                            align-content: center
+                            margin: 10px
+                            font-size: 1.2rem
+            .photo-section
+                min-width: 100%
+
+    #projectsSection
+        height: auto
+        .project-flexbox
+            width: 50vh
+            .project-box
+                height: 250px
+                width: 250px
+@media #{$phone}
+    #mainSection
+        height: 100vh
+        .flex-containter
+            align-items: flex-start
+            .box-1
+                font-size: 1.8rem
+            .box-2
+                font-size: 1.0rem
+
+
+    #aboutmeSection
+        height: 1300px
+        .flex-section
+            .about-me-section
+                flex-wrap: wrap
+                justify-content: space-around
+                .info-section
+                    width: 80%
+                    height: 50%
+                    .info-section-box
+                        .info-section-rands
+                            flex-wrap: wrap
+                            justify-content: center
+                            align-content: center
+                            margin: 5px
+                            height: 15%
+                            font-size: 1.2rem
+                            .info-resume
+                                text-decoration: underline
+                            .info-social-section
+                                justify-content: center
+                .photo-section
+                    width: 70%
+                    .photo-frame
+                        height: 250px
+                        
+    #skillSection 
+        height: auto
+        .skills-flex 
+            .skills-box 
+                .skills-frame
+                    flex-wrap: wrap
+                    width: 55%
+                    height: 150px
+                    .skill-item
+                        font-size: 0.9rem
+    #projectsSection
+        height: auto
+        .project-flexbox
+            width: 50vh
+            .project-box
+                height: 220px
+                width: 220px
+                box-shadow: 0px 0px 0.5px 0.5px gray
+
+    #contactSection
+        .section-title
+            margin:
+                top: 40px
+        .contact-flex
+            .contact-section-box
+                flex-direction: column-reverse
+                justify-content: space-between
+                align-items: center
+                height: 80%
+                width: 100%
+                .contact-info
+                    font-size: 0.8rem
+                    width: 100%
+                    align-items: center
+                    
+@media #{$sPhone}
+    #mainSection
+    .flex-containter
+        text-align: center
+        width: 100%
+
+    #aboutmeSection
+        height: 1100px
+        .flex-section
+            .about-me-section
+                height: 900px
+                flex-wrap: wrap
+                justify-content: space-around
+                .info-section
+                    width: 80%
+                    height: 50%
+                    .info-section-box
+                        .info-section-rands
+                            flex-wrap: wrap
+                            justify-content: center
+                            align-content: center
+                            margin: 10px
+                            font-size: 1.2rem
+                        
+            .photo-section
+                min-width: 100%
+    #skillSection 
+        .skills-flex 
+            .skills-box 
+                .skills-frame
+                    flex-wrap: wrap
+                    width: 50%
+                    height: 100px
+                    .skill-item
+                        font-size: 0.9rem
+    #contactSection
+        .contact-flex
+            .contact-section-box
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                height: 100%
+                .contact-info
+                    width: 100%
+                    align-items: center
+
+
+// SCROLL BAR //  
+::-webkit-scrollbar
+    width: 5px
+::-webkit-scrollbar-track
+    background: snow
+::-webkit-scrollbar-thumb
+    background: #ff4040
