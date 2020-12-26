@@ -10,7 +10,6 @@ function getSectionOffsets(target){
         }
         sectionOffsets.push(targetHeight)
     }
-    console.log(sectionOffsets);
 }
 
 function flexMenuFunction(){
