@@ -1,1 +1,0 @@
-sass  --watch style.sass "C:\Users\Nykram\Desktop\portfolio project\css\style.css"
