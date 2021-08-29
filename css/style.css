@@ -298,11 +298,13 @@ nav > ul > li > a {
   flex-direction: row;
 }
 #projectsSection .project-flexbox .project-box {
-  height: 200px;
-  width: 200px;
+  height: 145px;
+  width: 145px;
   margin: 10px;
   opacity: 0;
+  box-shadow: 0px 0px 19px -5px #000000;
   position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 #projectsSection .project-flexbox .overlay {
   position: fixed;
@@ -323,6 +325,7 @@ nav > ul > li > a {
 }
 #projectsSection .project-flexbox .project-box:hover {
   cursor: pointer;
+  transform: scale(1.2, 1.2);
 }
 
 #contactSection {
