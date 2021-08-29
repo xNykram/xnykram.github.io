@@ -18,7 +18,7 @@ body, html
 
 #mainSection
     height: 980px
-    background-image: url('https://initiate.alphacoders.com/images/100/cropped-2560-1440-1007350.jpg?5237')
+    background-image: url('../images/background-image.jpg')
     background-repeat: no-repeat
     background-size: cover
 
@@ -123,6 +123,7 @@ body, html
     height: 90%
     justify-content: center
     align-items: center
+
     .box-1
         font-weight: bold
         letter-spacing: 1rem
@@ -133,12 +134,11 @@ body, html
         padding: 5px
 
     .box-2
-        color: #e4dcdcee
+        color: #fdfdfdee
         text-transform: uppercase
         font-weight: lighter
         letter-spacing: 0.2rem
-        font-size: 1.2rem
-        margin: 5px
+        font-size: 1.5rem
             
 nav > ul > li > a
     text-decoration: none
@@ -216,9 +216,9 @@ nav > ul > li > a
                 flex-direction: row
 
                 .photo-frame
-                    width: 350px
+                    width: 300px
                     background-image: url('../images/profile-picture.jpg')
-                    height: 350px
+                    height: 300px
                     border: 5px solid white
                     background-size: cover
                     box-shadow: 1px 1px 7px gray
@@ -279,11 +279,10 @@ nav > ul > li > a
 #projectsSection
     background-color: white
     align-items: center
-    justify-content: center
     display: flex
-    height: 930px
-    margin:
-        bottom: 50px
+    height: 600px
+    padding:
+        top: 60px
     flex-direction: column
 
     .project-flexbox
@@ -295,8 +294,8 @@ nav > ul > li > a
         flex-direction: row
 
         .project-box
-            height: 300px
-            width: 300px
+            height: 200px
+            width: 200px
             margin: 10px
             opacity: 0
             position: relative
@@ -479,9 +478,9 @@ $desktop: "(min-width: 1280px)"
                     
 @media #{$sPhone}
     #mainSection
-    .flex-containter
-        text-align: center
-        width: 100%
+        .flex-containter
+            text-align: center
+            width: 100%
 
     #aboutmeSection
         height: 1100px
